@@ -12,7 +12,7 @@ public interface Cu_gongchangMapper{
 	@Select("select id, name, status from cu_gongchang")
 	List<Cu_gongchang> cu_gongchangList(Map<String, Object> map);
 
-	@Insert("insert into cu_gongchang(name, status) values(#{name}, #{status}"))
+	@Insert("insert into cu_gongchang(name, status) values(#{name}, #{status}")
 	boolean cu_gongchangAdd(Cu_gongchang cu_gongchang);
 
 	@Update("update cu_gongchang set name = #{name}, status = #{status} where id = #{id}")

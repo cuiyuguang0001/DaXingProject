@@ -12,7 +12,7 @@ public interface Cu_kucunMapper{
 	@Select("select id, name, util, num from cu_kucun")
 	List<Cu_kucun> cu_kucunList(Map<String, Object> map);
 
-	@Insert("insert into cu_kucun(name, util, num) values(#{name}, #{util}, #{num}"))
+	@Insert("insert into cu_kucun(name, util, num) values(#{name}, #{util}, #{num}")
 	boolean cu_kucunAdd(Cu_kucun cu_kucun);
 
 	@Update("update cu_kucun set name = #{name}, util = #{util}, num = #{num} where id = #{id}")

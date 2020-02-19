@@ -12,7 +12,7 @@ public interface Cu_wuliu_dingdanMapper{
 	@Select("select id, name, util, dateline, num, money, status from cu_wuliu_dingdan")
 	List<Cu_wuliu_dingdan> cu_wuliu_dingdanList(Map<String, Object> map);
 
-	@Insert("insert into cu_wuliu_dingdan(name, util, dateline, num, money, status) values(#{name}, #{util}, #{dateline}, #{num}, #{money}, #{status}"))
+	@Insert("insert into cu_wuliu_dingdan(name, util, dateline, num, money, status) values(#{name}, #{util}, #{dateline}, #{num}, #{money}, #{status}")
 	boolean cu_wuliu_dingdanAdd(Cu_wuliu_dingdan cu_wuliu_dingdan);
 
 	@Update("update cu_wuliu_dingdan set name = #{name}, util = #{util}, dateline = #{dateline}, num = #{num}, money = #{money}, status = #{status} where id = #{id}")

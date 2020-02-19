@@ -12,7 +12,7 @@ public interface Cu_userMapper{
 	@Select("select id, username, password from cu_user")
 	List<Cu_user> cu_userList(Map<String, Object> map);
 
-	@Insert("insert into cu_user(username, password) values(#{username}, #{password}"))
+	@Insert("insert into cu_user(username, password) values(#{username}, #{password}")
 	boolean cu_userAdd(Cu_user cu_user);
 
 	@Update("update cu_user set username = #{username}, password = #{password} where id = #{id}")

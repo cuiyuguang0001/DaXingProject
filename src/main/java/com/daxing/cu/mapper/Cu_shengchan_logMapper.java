@@ -12,7 +12,7 @@ public interface Cu_shengchan_logMapper{
 	@Select("select id, text, dateline, sid from cu_shengchan_log")
 	List<Cu_shengchan_log> cu_shengchan_logList(Map<String, Object> map);
 
-	@Insert("insert into cu_shengchan_log(text, dateline, sid) values(#{text}, #{dateline}, #{sid}"))
+	@Insert("insert into cu_shengchan_log(text, dateline, sid) values(#{text}, #{dateline}, #{sid}")
 	boolean cu_shengchan_logAdd(Cu_shengchan_log cu_shengchan_log);
 
 	@Update("update cu_shengchan_log set text = #{text}, dateline = #{dateline}, sid = #{sid} where id = #{id}")

@@ -12,7 +12,7 @@ public interface Cu_jobMapper{
 	@Select("select id, name, list from cu_job")
 	List<Cu_job> cu_jobList(Map<String, Object> map);
 
-	@Insert("insert into cu_job(name, list) values(#{name}, #{list}"))
+	@Insert("insert into cu_job(name, list) values(#{name}, #{list}")
 	boolean cu_jobAdd(Cu_job cu_job);
 
 	@Update("update cu_job set name = #{name}, list = #{list} where id = #{id}")
