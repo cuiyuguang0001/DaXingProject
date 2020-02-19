@@ -15,8 +15,9 @@ public class Cu_userController{
 	@Autowired
 	Cu_userService cu_userService;
 
+	@PostMapping("login")
 	public Map<String, Object> cu_userList(Cu_user cu_user){
-		return null;
+		return cu_userService.cu_userList(cu_user);
 	}
 
 	public Map<String, Object> cu_userAdd(Cu_user cu_user){

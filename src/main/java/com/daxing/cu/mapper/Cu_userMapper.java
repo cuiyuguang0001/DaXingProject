@@ -9,7 +9,7 @@ import java.util.Map;
 @Mapper
 public interface Cu_userMapper{
 
-	@Select("select id, username, password from cu_user")
+	@Select("select id, username, password from cu_user where username = #{username}")
 	List<Cu_user> cu_userList(Map<String, Object> map);
 
 	@Insert("insert into cu_user(username, password) values(#{username}, #{password}")
